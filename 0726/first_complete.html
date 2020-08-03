@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="b">빨강</div>
+    <div class="contain">
+        <div class="left">1</div>
+        <div class="right-1">2</div>
+        <div class="right-2">3</div>   
+    </div>
+
+    <div id="a">dfffff</div>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contain {
+        width: 100%;
+        height: 300px;
+        background: pink;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #a {
+        background: black;
+        height: 100px;
+    }
+
+    #b {
+        background: red;
+        height: 100px;
+    }
+     
+    .contain .right-1{
+        float: left;
+        width: 50%;
+        height: 50%;
+        background: yellow;
+    }
+    .contain .right-2{
+        float: left;
+        width: 50%;
+        height: 50%;
+        background: darkgreen;
+    }
+
+    .contain .left {
+        float: left;
+        height: 100%;
+        width: 50%;
+        background: yellowgreen;
+    }
+</style>
