@@ -29,6 +29,10 @@ a{
     /* padding-left: 20px; */
 }
 
+.navbar__logo i {
+    color: #d49466;
+}
+
 .navbar__menu{
     display: flex ;
     list-style: none;
@@ -41,7 +45,7 @@ a{
     /* 메뉴 마다 간격 추가 -> 패딩을 사용하면 마우스 클릭 시 간격 적당 */
 }
 
-.navbar__menu li:hover{
+.navbar__menu li:hover {
     background-color: orange;
     border-radius: 4px;
 }
@@ -58,10 +62,10 @@ a{
     padding: 8px 12px;
 }
 
-.navbar__toogleBtn{
+.navbar__toggleBtn{
     display: none;
     position: absolute;
-    right: 32px;
+    right: 32px; 
     font-size: 24px;
     color: orangered;
 }
@@ -70,28 +74,32 @@ a{
 @media screen and (max-width: 768px){
     .navbar{
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; 
         padding: 8px 24px;
     }
+    /* 창이 작아졌을 때 아이템 밑으로 내려가게 */
 
     .navbar__menu{
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 100%; 
     }
+    /* 한 줄에 아이템 하나씩 */
 
     .navbar__menu li {
         width: 100%;
         text-align: center;
     }
-
+    
     .navbar__icons{
+        display: none;
         justify-content: center;
         width: 100% ;
+
     }
 
-    .navbar__toogleBtn {
+    .navbar__toggleBtn {
         display: block;
     }
 
@@ -99,4 +107,4 @@ a{
     .navbar__icons.active {
         display: flex;
     }
-    
+}
