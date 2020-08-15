@@ -1,13 +1,13 @@
-@charset "UTF-8";
+@charset "UTF-8";  /* 인코딩으로 인한 문자 깨짐 방지 */
 
 html {
     font-size: 100%;
 }
 
 body {
-    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif;
-    line-height: 1.7;
-    color: #432;
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, 'Alata', sans-serif;
+    line-height: 1.7; /*라인 간격*/
+    color: #111;
 }
 
 a {
@@ -19,7 +19,7 @@ img {
 }
 
 .logo {
-    width: 50px;
+    width: 21px;
     margin-top: 14px;
 }
 
@@ -36,11 +36,11 @@ img {
 }
 
 .main-nav a {
-    color: #432;
+    color: #111;
 }
 
 .main-nav a:hover {
-    color: #0bd;
+    color: #fa4cdd;
 }
 
 .page-header {
@@ -60,19 +60,22 @@ img {
 }
 
 .home-content p {
-    font-size: 1.125rem;
+    font-size: 2rem;
+    font-family: 'Sunflower', sans-serif;
     margin: 10px 0 42px;
 }
 
 .page-title {
-    font-size: 5rem;
-    font-family: 'Philosopher', serif;
+    font-size: 8rem;
+    font-family: 'Black Han Sans', sans-serif;
+    letter-spacing: -5px;
     text-transform: uppercase;
     font-weight: normal;
 }
 
 .button {
     font-size: 1.375rem;
+    font-family: 'Sunflower', sans-serif;
     background: #0bd;
     color: #fff;
     border-radius: 5px;
