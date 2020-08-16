@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px;  /*한 열에 3개의 그리드 아이템을 200px 간격으로 정렬*/
+    grid-template-columns: 1fr 1fr; /* 한 열에 자식 요소를 1:1:1 비율로 정렬*/
+    gap: 10px; /*자식 요소 사이의 여백 지정 */
+    grid-template-rows: 200px 200px 200px;  /* 자식 요소 높이 설정(두 줄로 200px 씩) */
+    /* grid-template-rows: 3fr 3fr; */
+}
+
+.item {
+    background: #0db;
+    color: #fff;
+    padding: 10px;
+}
