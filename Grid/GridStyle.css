@@ -1,0 +1,194 @@
+@charset "UTF-8";  /* 인코딩으로 인한 문자 깨짐 방지 */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, 'Alata', sans-serif;
+    line-height: 1.7; /*라인 간격*/
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.logo {
+    width: 30px;
+    margin-top: 30px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #111;
+}
+
+.main-nav a:hover {
+    color: #fa4cdd;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-family: 'Sunflower', sans-serif;
+    margin: 10px 0 42px;
+}
+
+.page-title {
+    font-size: 5rem;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.button {
+    font-size: 1.375rem;
+    font-family: 'Sunflower', sans-serif;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+
+.button:hover {
+    background: #0090aa;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+/* Menu */
+#menu {
+    background-image: url(../Grid/image/upper.jpg);
+    min-height: 100vh;
+}
+
+.menu-content {
+    max-width: 700px;
+    margin-top: 10%;
+}
+
+.menu-content .page-title {
+    text-align: center;
+}
+
+.menu-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+.grid {
+    display: grid;
+    gap: 26px; /*요소 사이의 너비 */
+    /* grid-template-columns: repeat(3, minmax(240px, 1fr));  1fr 1fr 1fr 은 1:1:1 비율 / 3, 1fr은 1열에 3개씩 배치 / minmax 이것보다 작아질수는 없다 */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* 화면에 맞게 요소 사이즈 자동 지정 */
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.big-box {
+    grid-column: 1/3; /*가로 방향의 범위 지정*/
+    grid-row: 1/3;
+}
+
+.big-box img {
+    height: 94%;
+    width: 100%;
+    object-fit: cover; /* 이미지 자동으로 자르게 하는 것 */
+}
+
+@media (max-width:600px) {
+    
+    #shin{
+        font-size: 60px;
+    }
+
+    /* #news  .page-title {
+        font-size: 100px;
+    } */
+
+    /*header*/
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /*home*/
+    .home-content {
+        margin-top: 20%;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-title {
+        font-size: 1.375rem;
+    }
+
+    .menu-content {
+        margin-top: 20%;
+    }
+
+    .big-box {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .big-box img {
+        height: 100%;
+    }
+}
+
